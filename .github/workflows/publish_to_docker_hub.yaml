@@ -62,7 +62,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
 
       - name: Build and push dev container
-        id: docker_build
+        id: docker_build_dev
         uses: docker/build-push-action@v5
         with:
           context: .
